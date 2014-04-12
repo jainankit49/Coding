@@ -1,0 +1,31 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+public class Solution {
+    public String reverseWords(String s) {
+       StringBuilder sb = new StringBuilder();
+       StringTokenizer st = new StringTokenizer(s);
+       Stack<String> stack = new Stack<String>();
+       
+       if(s==" "){
+       return "";   
+       }
+       
+       while(st.hasMoreTokens()){
+           String token = st.nextElement().toString();
+           stack.push(token);
+       }
+
+       while(!stack.isEmpty()){
+           String result = stack.pop();
+           sb.append(result + " ");
+       }
+       String res = sb.toString();
+       //System.out.println(res);
+       res=res.trim();
+       return res;
+    }
+    
+}
