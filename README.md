@@ -1,4 +1,4 @@
 Coding
 ======
 
-This repository consists of my practice codes from online coding site www.leetcode.com
+This repository consists of solutions to various coding problems.
